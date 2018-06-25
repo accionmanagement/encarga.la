@@ -74,19 +74,10 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <div class="col-lg-12">
                         <h1>Encarga.la</h1>
                     </div>
-                    <div class="col-lg-2">
-                        <h5>{{ trans('adminlte_lang::message.amazing') }}</h5>
-                        <p>{{ trans('adminlte_lang::message.basedadminlte') }}</p>
-                        <img class="hidden-xs hidden-sm hidden-md" src="{{ asset('/img/arrow1.png') }}">
-                    </div>
-                    <div class="col-lg-8">
-                        <img class="img-responsive" src="{{ asset('/img/app-bg.png') }}" alt="">
-                    </div>
-                    <div class="col-lg-2">
-                        <br>
-                        <img class="hidden-xs hidden-sm hidden-md" src="{{ asset('/img/arrow2.png') }}">
-                        <h5>{{ trans('adminlte_lang::message.awesomepackaged') }}</h5>
-                        <p>... {{ trans('adminlte_lang::message.by') }} <a href="http://acacha.org/sergitur">Sergi Tur Badenas</a> {{ trans('adminlte_lang::message.at') }} <a href="http://acacha.org">acacha.org</a> {{ trans('adminlte_lang::message.readytouse') }}</p>
+                    <div class="col-lg-12">
+                        <p>
+                            <input style="width: 100%;" type="text" placeholder="Ej: https://www.amazon.com/dp/B07456BG8N/">
+                        </p>
                     </div>
                 </div>
             </div> <!--/ .container -->
