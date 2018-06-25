@@ -15,6 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/paso1',function () {
+    return view('adminlte::layouts.paso1');
+});
+Route::get('/paso2', function () {
+    return view('adminlte::layouts.paso2');
+});
+Route::get('/paso3', function () {
+    return view('adminlte::layouts.paso3');
+});
+
 Route::group(['middleware' => 'auth'], function () {
     //    Route::get('/link1', function ()    {
 //        // Uses Auth Middleware
@@ -27,6 +37,3 @@ Route::group(['middleware' => 'auth'], function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/paso1', 'HomeController@paso1');
-Route::get('/paso2', 'HomeController@paso2');
-Route::get('/paso3', 'HomeController@paso3');

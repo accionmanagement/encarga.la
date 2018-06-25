@@ -10,4 +10,20 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+
+    public function paso1()
+    {
+        return view('adminlte::paso1');
+    }
+
+    public function paso2()
+    {
+        return view('adminlte::paso2');
+    }
+
+    public function paso3()
+    {
+        return view('adminlte::paso3');
+    }
 }
